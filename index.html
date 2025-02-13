@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Netflix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+            text-align: center;
+        }
+        .catalog {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+        .domain {
+            width: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .domain:hover {
+            transform: scale(1.1);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        a {
+            color: #84a4ea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #00c4ff;
+        }
+    </style>
+</head>
+<body>
+<h1>Subdomain Catalog</h1>
+<div class="catalog">
+    <div class="domain"><img src="http://technology.amorgante.es/images/profile.png" alt="technology.amorgante.es"><a class="a" href="https://technology.amorgante.es">Technology</a></div>
+    <div class="domain"><img src="https://avatars.githubusercontent.com/u/152157520?s=200&v=4" alt="detailer.amorgante.es"><a class="a" href="https://detailer.amorgante.es">Detailer</a></div>
+    <div class="domain"><img src="https://avatars.githubusercontent.com/u/199121048?s=200&v=4" alt="restorer.amorgante.es"><a class="a" href="https://restorer.amorgante.es">Restorer</a></div>
+</div>
+</body>
+</html>
